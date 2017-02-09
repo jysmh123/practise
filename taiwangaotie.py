@@ -10,7 +10,8 @@ postData = parse.urlencode([
     ('SearchTime', '16:00'),
     ('SearchWay', 'DepartureInMandarin')
 ])
-req.add_header('Origin', 'http://www.thsrc.com.tw')
+req.add_header('Origin',
+               'http://www.thsrc.com.tw')
 req.add_header('User-Agent',
                'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')
 resp = request.urlopen(req, data=postData.encode('utf-8'))
