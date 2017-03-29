@@ -31,7 +31,7 @@ if __name__ == "__main__":
         poster VARCHAR(100) NOT NULL,
         score VARCHAR(4) NOT NULL,
         quote VARCHAR(50)
-    )CHARSET=utf8mb4"""
+        )CHARSET=utf8mb4"""
     cursor.execute(createTab)
     start = 0
     while (start < 250):
